@@ -19,7 +19,7 @@ class Transforms<T> {
 /// Transforms byte state data (immutable).
 /// Do not mutate original data.
 /// Could be ran with null or empty data.
-typedef Uint8List RawTransformer(Uint8List? data);
+typedef Uint8List? RawTransformer(Uint8List? data);
 
 /// Holds onSave and onLoad raw transformations.
 class RawTransforms {
